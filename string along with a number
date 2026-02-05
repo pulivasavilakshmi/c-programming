@@ -1,0 +1,9 @@
+#include <stdio.h>
+#include<string.h>
+int main() {
+    int age;
+    scanf("%s",&age);
+    printf("age=%d",age);
+    
+    return 0;
+}
