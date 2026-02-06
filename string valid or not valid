@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<string.h>
+#include<ctype.h>
+int main()
+{
+   char otp[50];
+   int i,valid=1;
+    fgets(otp,50,stdin);
+    otp[strcspn(otp,"\n")] = '\0';
+    if(strlen(otp)!=6)
+    valid=0;
+    for(i=0;otp[i]!='\0';i++){
+        if(!isdigit(otp[i])){
+            valid=0;
+            break;
+        }
+    }
+    if(valid)
+    printf("Valid");
+    else
+    printf("Not Valid");
+    return 0;
+}
