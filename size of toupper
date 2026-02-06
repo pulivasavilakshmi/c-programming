@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+#include<ctype.h>
+int main() {
+    char str[100];
+    fgets(str,sizeof(str),stdin);
+
+    if (isalpha(str[0])){
+        str[0]=toupper(str[0]);
+    }
+    
+    printf("output :%s",str);
+    
+    
+    return 0;
+}
