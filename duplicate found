@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include<string.h>
+int main() {
+    char str[100];
+    int i,j,duplicate=0;
+
+    scanf("%s",str);
+
+    for(i=0;i<strlen(str);i++){
+        for (j=i+1;j<strlen(str);j++){
+            if(str[i]==str[j]){
+         duplicate =1;
+            
+        }
+    }
+                       }
+    
+    
+if(duplicate)
+printf("Duplicate found\n");
+else 
+printf("noduplicate found\n");
+
+    
+    return 0;
+}
