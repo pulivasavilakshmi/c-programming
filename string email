@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char email[50],domain[]="@company.com";
+    int i,j,elen,dlen,match=1;
+    fgets(email,50,stdin);
+    elen=strlen(email);
+    dlen=strlen(domain);
+    if(elen<dlen)
+    match=0;
+    else{
+        for(i=elen-dlen,j=0;domain[j];i++,j++){
+            if(email[i]!=domain[j]){
+                match=0;
+                break;
+            }
+        }
+    }
+    if(match)
+    printf("Valid");
+    else{
+        printf("Invalid");
+    }
+    return 0;
+}
+
