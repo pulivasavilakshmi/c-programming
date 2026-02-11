@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main() {
+    int n;
+    printf("enter n = ");
+    scanf("%d",&n);
+    if(n >=100 && n<=999){
+        printf("Three digit number");
+    }
+    else{
+        printf("not three digit number");
+    }
+
+    
+    return 0;
+}
