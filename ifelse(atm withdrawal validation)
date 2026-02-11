@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() {
+    int amount;
+    scanf("%d",&amount);
+    if(amount>100)
+    {
+        printf("valid amount");
+    }else
+    {
+        printf("not valid amount");
+    }
+    
+    return 0;
+}
