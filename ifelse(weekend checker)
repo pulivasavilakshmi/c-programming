@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main() {
+    int weekend;
+    scanf("%d",&weekend);
+    if(weekend>=1 && weekend<=5)
+    {
+        printf("weekday");
+    }else if(weekend>=6 && weekend<=7)
+    {
+      printf("weekend");
+    }else
+    {
+        printf("invalid number");
+    }
+    
+    return 0;
+}
