@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main() {
+    int a;{
+    scanf("%d",&a);}
+    if(a<20){
+        printf("positive");
+    }else if(a>20)
+    {
+    printf("negative");
+    }else
+    {
+        printf("neutral");
+    }
+
+    
+    return 0;
+}
