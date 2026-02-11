@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main() {
+    int purchaseamount;
+    scanf("%d", &purchaseamount);
+    if(purchaseamount >1000){
+    printf("discount appiled");
+    }
+    else{
+        printf("no discount");
+    }
+    return 0;
+}
