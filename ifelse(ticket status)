@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main() {
+    int a;{
+    scanf("%d",&a);}
+    if(a>20){
+        printf("ticket status");
+    }else if(a>20)
+    {
+    printf("waitinglist");
+    }else
+    {
+        printf("confirmed");
+    }
+
+    
+    return 0;
+}
