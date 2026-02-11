@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() {
+    int accounts;
+    scanf("%d",&accounts);
+    if(accounts>=3)
+    {
+        printf("accountlocked");
+    }else
+    {
+        printf("loginallowed");
+    }
+    
+    return 0;
+}
