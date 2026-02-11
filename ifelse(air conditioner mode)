@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main() {
+    int a;{
+    scanf("%d",&a);}
+    if(a<20){
+        printf("heatingmode");
+    }else if(a>20)
+    {
+    printf("cooling mode");
+    }else
+    {
+        printf("normalmode");
+    }
+
+    
+    return 0;
+}
