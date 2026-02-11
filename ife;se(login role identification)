@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main() {
+    int a;{
+    scanf("%d",&a);}
+    if(a>20){
+        printf("admin");
+    }else if(a>20)
+    {
+    printf("user");
+    }else
+    {
+        printf("guest");
+    }
+
+    
+    return 0;
+}
