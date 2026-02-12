@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main() {
+    int account, withdrawl,balance;
+    scanf("%d%d%d",&account,&withdrawl,&balance);
+    switch(account){
+        case 1:
+        if (balance>=withdrawl)
+        {
+            printf("transaction successful");
+        }
+        break;
+        case 2:
+    if(withdrawl==5000)
+    {
+        printf("transaction successful");
+    }
+    else{
+        printf("limit exceeded");
+    }
+    break;
+    } 
+    return 0;
+}
