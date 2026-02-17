@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+    int a,digit,count = 0;
+    scanf("%d",&a);
+    for(int i=1;a>0;a=a/10){
+    digit = a % 10;
+    if(digit%2==0)
+    {
+        count++;
+    }
+    }
+    printf("%d",count);
+    return 0;
+}
