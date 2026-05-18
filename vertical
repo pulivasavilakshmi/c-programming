@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main() {
+
+    printf("Hello How are you\v\v");
+    printf("My name is vasavi\v\v");
+    printf("Today is 19th May 2026\v\v");
+    printf("I am at sscet sangagiri\v\v");
+    printf("students are learning c coding\v\v");
+    printf("For some time there was an power\v\v");
+    printf("Now power is okay\v\v");
+}
