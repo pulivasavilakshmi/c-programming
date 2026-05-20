@@ -1,0 +1,13 @@
+#include<stdio.h>
+
+
+int main() {
+    printf("INTEGER IS =%d BYTES \n\n",sizeof(int));
+    printf("CHARACTER IS =%d BYTES \n\n",sizeof(char));
+    printf("DOUBLE IS =%dBYTES \n\n",sizeof(double));
+    printf("FLOAT IS=%dBYTES \n\n",sizeof(float));
+    printf("LONG IS =%dBYTES \n\n",sizeof(long));
+    printf("SIGNED IS =%dBYTES \n\n",sizeof(signed));
+    printf("UNSIGNED IS =%dBYTES \n\n",sizeof(unsigned));
+    printf("LONG DOUBLE IS =%dBYTES \n\n",sizeof(long double));
+}
