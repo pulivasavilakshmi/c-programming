@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() {
+    int A;
+    int B;
+    int C;
+    int SSCET;
+    int _ABC;
+    int X , Y , Z ;
+    int D=20;
+    int F=10;
+    int E=F;
+    int G,H=20,I;
+
+}
