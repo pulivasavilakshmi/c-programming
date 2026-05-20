@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    printf("int a; declares an integer variable named a.\v");
+    printf("int num; declares a variable called num.\v");
+    printf("int age = 18; declares and initialization age with 18");
+    printf("int marks = 95; Stores the value 95 in marks\v");
+    printf("int x = 10;  Declares an integer variable x \v");
+    printf("int y = -5;  Declares a variable with a negative value.\v");
+    printf("int total = 1000;  Stores a large integer value.\v");
+    printf("int count = 0;  Initializes the variable with zero.\v");
+    printf("int salary = 25000;  Declares a salary variable.\v");
+    printf("int salary = 25000;  Declares a salary variable.\v");
+    printf("int rollNumber = 15;  Stores a student roll number.\v");
+    printf("int temperature = 32;  Declares a temperature variable.\v");
+    printf("int distance = 120;  Stores a distance value.\v");
+    printf("int first, second;  Declares two integer variables together.\v");
+    printf("int p = 5, q = 10;  Declares and initializes two variables.\v");
+    printf("int num1, num2, num3;  Declares three integer variables at once.\v");
+
+    return 0;
+
+}
