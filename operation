@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main() {
+   int A,B,Result;
+   char OPERATION;
+   printf("Enter a value for A:");
+   scanf("%d",&A);
+    printf("Enter a value for B:");
+   scanf("%d",&B);
+   printf("\n");
+   printf("Enter OPERATION :");
+   scanf("%d",&OPERATION);
+   if(OPERATION=='+')
+   {
+    Result=A+B;
+    printf("A=%d%c%d=%d",A,OPERATION,B,Result);
+   }
+   
+    return 0;
+}
