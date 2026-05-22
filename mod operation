@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main()
+{
+    int a=10;
+    int b=3;
+    /* %mod Opertion*/
+    C = a % b:
+    printf("The mod Operation Result is %d,"C);
+}
