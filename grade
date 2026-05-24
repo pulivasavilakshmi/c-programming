@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main() {
+//    local variable defination:
+        char grade ='f';
+        switch(grade){
+            case'A':
+            printf("Excellent");
+            break;
+            case'B':
+            case'C':
+            printf("Well done");
+            break;
+            case'D':
+            printf("You passed");
+            break;
+            case'f':
+            printf("your are the defined");
+            break;
+
+        }
+    
+    return 0;
+}
