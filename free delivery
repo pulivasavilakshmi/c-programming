@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() {
+    int a;
+    scanf("%d",&a);
+    if( a>499)
+    {
+        printf("free delivery");
+    }else
+    {
+        printf("delivery");
+    }
+    
+    return 0;
+}
