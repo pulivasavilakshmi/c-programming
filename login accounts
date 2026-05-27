@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() {
+    int accounts;
+    scanf("%d",&accounts);
+    if(accounts<1000)
+    {
+        printf("lowbalance");
+    }else
+    {
+        printf("sufficient balance");
+    }
+    
+    return 0;
+}
