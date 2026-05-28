@@ -1,0 +1,20 @@
+char* capitalizeTitle(char* title) {
+    int start=0;
+    for(int i=0; ;i++){
+        if(title[i]==' '||title[i]=='\0'){
+            int len=i-start;
+            for(int j=start;j<i;j++){
+                if(title[j]>='A' && title[j]<='Z'){
+                    title[j]=title[j]+32;
+                }
+            }
+            if(len>2&&title[start]>='a'&& title[start]<='z'){
+                title[start]=title[start]-32;
+            }
+            start=i+1;
+        }
+        if(title[i]=='\0')
+        break;
+    }
+    return title;
+}
