@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+    int n;
+printf("ENTER THE NUMBER:");-
+scanf("%d",&n);
+int thousand=n/1000;
+printf("the thousand degit :%d\n",thousand);
+int third=n/100;
+int hundred=third%10;
+printf("the third degit :%d\n",hundred);
+int tens=n/10;
+int ten=tens%10;
+printf("the tenth degit is :%d\n",ten);
+int num=n%10;
+int once=num%10;
+printf("the once place is :%d\n",once);
+
+}
