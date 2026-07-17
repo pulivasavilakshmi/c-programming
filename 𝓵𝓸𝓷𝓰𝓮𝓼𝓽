@@ -1,0 +1,17 @@
+#include <string.h>
+
+int lengthOfLongestSubstring(char *s) {
+    int pos[128];
+    memset(pos, -1, sizeof(pos));
+    
+    int max_len = 0, start = 0;
+    for (int i = 0; s[i] != '\0'; i++) {
+        if (pos[(unsigned char)s[i]] >= start) {
+            start = pos[(unsigned char)s[i]] + 1; 
+        }
+        pos[(unsigned char)s[i]] = i; 
+        int curr_len = i - start + 1;
+        if (curr_len > max_len) max_len = curr_len;
+    }
+    return max_len;
+}
