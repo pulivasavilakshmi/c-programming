@@ -1,0 +1,20 @@
+#include <string.h>
+
+char* longestPalindrome(char* s) {
+    int len = strlen(s), start = 0, max_len = 0;
+    if (len < 2) return s;
+
+    for (int i = 0; i < len; ) {
+        if (len - i <= max_len / 2) break; // Optimization: remaining string too short
+        int left = i, right = i;
+        
+        while (right < len - 1 && s[right + 1] == s[right]) right++; // Skip duplicate centers
+        i = right + 1; // Move next center past duplicates
+
+        while (left > 0 && right < len - 1 && s[left - 1] == s[right + 1]) { left--; right++; } // Expand
+
+        if (right - left + 1 > max_len) { start = left; max_len = right - left + 1; }
+    }
+    s[start + max_len] = '\0';
+    return &s[start];
+}
