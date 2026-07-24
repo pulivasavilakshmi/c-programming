@@ -1,0 +1,23 @@
+package day4;
+
+import java.util.Scanner;
+
+public class demohourglass {
+    public static void main(String[] args) {
+        Scanner scanner=new Scanner(System.in);
+        int limit=0;char alpha='Z';
+        System.out.println("Enter the limit");
+        limit=scanner.nextInt();
+        for(int row=limit/2+1;row>0;row--){
+            for(int space=limit/2+1;space>row;space--)
+                System.out.print(" ");
+            for(int column=1;column<(row*2);column++)
+            {System.out.println(alpha);alpha--;}
+            System.out.println();
+   
+        }
+        scanner.close();
+    }
+    
+    
+}
