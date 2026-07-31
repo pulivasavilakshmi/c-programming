@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() {
+    float datausage;
+    scanf("%f",&datausage);
+    if(datausage<=2)
+    {
+        printf("data with in limit");
+    }else 
+    {
+        printf("data limit exceeded");
+    }
+    
+    return 0;
+}
