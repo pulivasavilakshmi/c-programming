@@ -1,0 +1,27 @@
+package day14;
+import java.util.Arrays;
+public class HandsOnString {
+    public static void main(String[] args) {
+        String alpha = "Madhuri Reddy";//literal object
+        //non literal object
+        String beta = new String("           Madhuri Reddy  ");
+        System.out.println(beta.length());
+        beta = beta.trim();//immutable
+        System.out.println(beta.length());
+        System.out.println(beta.equals("Madhuri Reddy"));
+        System.out.println(alpha=="Madhuri Reddy");
+        alpha = alpha.replace("Madhuri","Madhu");//immutable
+        System.out.println(alpha.compareTo("Madhuri Reddy"));
+        byte[] newBytes=alpha.getBytes();
+        System.out.println(Arrays.toString(newBytes));
+        char[] chars = alpha.toCharArray();
+        System.out.println(Arrays.toString(chars));
+        byte[] bytes = {65,66,67,68,69,70};
+        String zeta = new String(newBytes);
+        System.out.println(zeta);
+        char[] newChars = {122,121,120,119,118};
+        String delta = new String(newChars);
+        System.out.println(delta);//zyxwv
+        System.out.println(delta.contains("y"));
+    }
+}
