@@ -1,0 +1,34 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int T = sc.nextInt();
+
+        while (T-- > 0) {
+            int A = sc.nextInt();
+            int B = sc.nextInt();
+            int P = sc.nextInt();
+            int Q = sc.nextInt();
+            int R = sc.nextInt();
+
+            int ans = Integer.MAX_VALUE;
+
+            // Try all possible diagonal moves
+            for (int d = 0; d <= Math.min(A, B); d++) {
+                int cost = d * R;
+
+                int remA = A - d;
+                int remB = B - d;
+
+                cost += ((remA + 1) / 2) * P;
+                cost += ((remB + 1) / 2) * Q;
+
+                ans = Math.min(ans, cost);
+            }
+
+            System.out.println(ans);
+        }
+    }
+}
