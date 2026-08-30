@@ -1,0 +1,28 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int u = sc.nextInt();
+        double energy;
+
+        if (u <= 100) {
+            energy = u * 2;
+        } else if (u <= 300) {
+            energy = 100 * 2 + (u - 100) * 3;
+        } else {
+            energy = 100 * 2 + 200 * 3 + (u - 300) * 5;
+        }
+
+        double amount = 100 + energy;
+
+        if (amount > 1000) {
+            amount = amount + amount * 0.10;
+        }
+
+        double finalBill = amount + amount * 0.05;
+
+        System.out.println((int) finalBill);
+    }
+}
