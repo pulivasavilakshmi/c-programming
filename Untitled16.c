@@ -1,0 +1,40 @@
+#include<stdio.h>
+int main() {
+    int connectionType, units;
+    float bill = 0;
+    scanf("%d", &connectionType);
+    scanf("%d", &units);
+     switch(connectionType) {
+      case 1:
+            if(units <= 100) {
+                bill = units * 3;
+            } else {
+                bill = (100 * 3) + ((units - 100) * 5);
+            }
+
+            
+            bill = bill - 80;
+            if(bill < 0)
+                bill = 0;
+
+            printf("Electricity Bill: %.2f", bill);
+            break;
+
+        
+        case 2:
+            if(units <= 100) {
+                bill = units * 5;
+            } else {
+                bill = (100 * 5) + ((units - 100) * 7);
+            }
+
+            printf("Electricity Bill: %.2f", bill);
+            break;
+
+        default:
+            printf("Invalid Connection Type");
+    }
+
+    return 0;
+}
+    
