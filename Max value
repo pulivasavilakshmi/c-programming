@@ -1,0 +1,28 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+
+        long smallest = Long.MAX_VALUE;
+        long secondSmallest = Long.MAX_VALUE;
+
+        for (int i = 0; i < n; i++) {
+            long value = sc.nextLong();
+
+            if (value < smallest) {
+                secondSmallest = smallest;
+                smallest = value;
+            } else if (value < secondSmallest && value > smallest) {
+                secondSmallest = value;
+            }
+        }
+
+        System.out.println(secondSmallest);
+
+        sc.close();
+    }
+}
+9
