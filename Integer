@@ -1,0 +1,26 @@
+class Solution {
+    public int findCheapestPrice(int size, int[][] flights, int src, int dst, int stops) {
+        int[] dist = new int[size];
+        Arrays.fill(dist, Integer.MAX_VALUE);
+        dist[src] = 0;
+
+        for (int it = 0; it <= stops; it++) {
+            int[] temp = Arrays.copyOf(dist, size);
+
+            for (int[] flight : flights) {
+                int cs = flight[0];
+                int cd = flight[1];
+                int cost = flight[2];
+
+                if (dist[cs] != Integer.MAX_VALUE &&
+                    dist[cs] + cost < temp[cd]) {
+                    temp[cd] = dist[cs] + cost;
+                }
+            }
+
+            dist = temp;
+        }
+
+        return dist[dst] == Integer.MAX_VALUE ? -1 : dist[dst];
+    }
+}
