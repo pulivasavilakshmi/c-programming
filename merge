@@ -1,0 +1,22 @@
+import java.util.*;
+class Solution {
+    public int[][] merge(int[][] exists) {
+        Arrays.sort(exists, (r1, r2) -> r1[0] - r2[0]);
+
+        List<int[]> temp = new ArrayList<>();
+        int[] prev = exists[0];
+
+        for (int ind = 1; ind < exists.length; ind++) {
+            if (exists[ind][0] <= prev[1]) {
+                prev[1] = Math.max(prev[1], exists[ind][1]);
+            } else {
+                temp.add(prev);
+                prev = exists[ind];
+            }
+        }
+
+        temp.add(prev);
+
+        return temp.toArray(new int[temp.size()][]);
+    }
+}
